@@ -175,7 +175,6 @@ upgrade-normalize:
 		cp node_modules/normalize.css/normalize.css modules/normalize.less
 
 #target: upgrade-responsive-menu - Upgrade LESS module Responsice menu
-#funkar ej
 .PHONY: upgrade-responsive-menu
 upgrade-responsive-menu:
 		@$(call HELPTEXT,$@)
@@ -183,3 +182,9 @@ upgrade-responsive-menu:
 		cp node_modules/desinax-responsive-menu/src/less/responsive-menu.less
 		modules/
 		cp node_modules/desinax-responsive-menu/src/js/responsive-menu.js js/
+
+
+#target: upgrade -upgrade external LESS modules.
+.PHONY: upgrade
+upgrade: upgrade-normalize upgrade-responsive-menu
+  	@$(call HELPTEXT,$@)
