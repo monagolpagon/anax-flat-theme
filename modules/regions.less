@@ -29,10 +29,23 @@
     float: left;
 }
 
-.content {
+.content img {
     float:left;
-    line-height: 0;
+    margin-right: 5px;
+    margin-top: -13px;
 }
+
+.content
+{
+  border: 1px solid grey;
+  overflow: auto;
+  background-color: #dbb6d6;
+  font-style: italic;
+  width: 450px;
+  height: 100%;
+
+}
+
 
 .outer-wrap-footer {
     clear: both;
@@ -98,3 +111,29 @@
 .byline {
     border: 1px solid Black;
 }
+
+@media screen and (max-width: 750px) {
+    .sidebar {
+        //width: 100%;
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .footer-column {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 560px) {
+     .site-logo-text {
+         width: 90%;
+     }
+
+     .navbar2 {
+         display: none;
+     }
+ }
+ 
