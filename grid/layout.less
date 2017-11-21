@@ -1,0 +1,112 @@
+@import "grid-float.less";
+@import "grid-mixins.less";
+
+.inner-wrap {
+    .container();
+    .showGrid(940px);
+}
+
+.row {
+    .row();
+}
+
+.main {
+    .column(8);
+    .push(2);
+}
+
+.outer-wrap.outer-wrap-main main {
+    .column(6);
+    .push(0.2);
+}
+.outer-wrap.outer-wrap-main div div div div div {
+    .column(12.4);
+}
+.outer-wrap.outer-wrap-main div div div div {
+    .column(4.7);
+}
+
+.after-main {
+    .column(9);
+    .push(3);
+}
+
+.breadcrumb-wrap {
+    .column(11.5);
+    .push(0.5);
+}
+
+.outer-wrap-flash img {
+    .column(12);
+}
+
+.outer-wrap.outer-wrap-header header {
+    .column(12);
+}
+
+.navbar2 {
+    .column(9);
+    .push(1);
+    //.row();
+}
+
+.site-logo-text {
+    .column(2);
+}
+
+body div div.outer-wrap.outer-wrap-breadcrumb div div div nav ul li {
+    .column(6.9);
+    .push(0.1);
+}
+.footer-column {
+    .column(4);
+}
+
+.outer-wrap.outer-wrap-main h4 {
+    .column(12);
+}
+
+.outer-wrap.outer-wrap-main div div div div {
+    .column(1.9);
+}
+.outer-wrap.outer-wrap-main div div div div h4 {
+    .push(0.3);
+}
+
+.main .has-sidebar-left .has-sidebar {
+    .column(8);
+    .push(2);
+}
+
+// Make it responsive using media queries
+@media (max-width: 1150px) {
+    .pull-left,
+    .pull-right {
+        display: none;
+    }
+}
+
+@media (max-width: 980px) {
+    .wrap {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+}
+
+@media (max-width: 800px) {
+    .info {
+        .column(6);
+    }
+}
+
+@media (max-width: 700px) {
+    .main,
+    .triptych {
+        .column(12);
+    }
+
+    .sidebar,
+    .info {
+        display: none;
+    }
+}

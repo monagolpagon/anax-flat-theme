@@ -2,7 +2,6 @@
  * Show grid.
  */
 .showGrid(@maxWidth: 1100px) {
-    background: url(grid950x24x30x10-nomargin.png) repeat-y fixed center center;
     background-size: 100% auto;
     margin-left: auto;
     margin-right: auto;
@@ -11,4 +10,9 @@
     @media (min-width: @maxWidth) {
         background-size: @maxWidth auto;
     }
+}
+
+.vgrid, .route-vertical {
+  background: url("../img/grid940x12x60x20-nomargin.png") repeat-y fixed center center;
+
 }
