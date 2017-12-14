@@ -17,7 +17,8 @@
 
 .outer-wrap.outer-wrap-main main {
     .column(6);
-    .push(0.2);
+    .push(0.1);
+    margin-left: @magicNumber*4 - 10px;
 }
 .outer-wrap.outer-wrap-main div div div div div {
     .column(12.4);
@@ -47,15 +48,17 @@
 }
 
 .navbar2 {
-    .column(9);
+    .column(10.8);
     .push(1);
     //.row();
 }
-
+.outer-wrap.outer-wrap-header header nav div ul {
+  .column(10.8);
+  .push(1);
+}
 .site-logo-text {
     .column(2);
 }
-
 body div div.outer-wrap.outer-wrap-breadcrumb div div div nav ul li {
     .column(6.9);
     .push(0.1);
@@ -77,7 +80,8 @@ body div div.outer-wrap.outer-wrap-breadcrumb div div div nav ul li {
 
 .main .has-sidebar-left .has-sidebar {
     .column(8);
-    .push(2);
+    .push(1);
+
 }
 
 // Make it responsive using media queries
